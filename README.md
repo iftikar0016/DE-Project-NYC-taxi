@@ -24,29 +24,32 @@ The project utilizes 2023 Green Taxi trip records, which provide detailed inform
 
 ### Azure Data Lake Storage Gen2 (ADLS)
 - **Bronze Layer**: Houses raw NYC Taxi data
-  ![Bronze Layer](https://github.com/iftikar0016/DE-Project-NYC-taxi/blob/main/Screenshots/bronze_layer.png)
 - **Silver Layer**: Stores cleaned and validated data
-  ![Silver Layer]()
 - **Gold Layer**: Contains analytics-ready Delta tables
-  ![Gold Layer]()
+
+ ![ADLS](Screenshots/ADLS.png)
 
 ### Azure Data Factory (ADF)
 Orchestrates data ingestion with a dynamic pipeline:
 - Employs ForEach and If-condition activities
 - Utilizes Copy activity for data transfer
-![ADF Pipeline]()
+ 
+![ADF Pipeline](Screenshots/ADF.png)
 
 ### Azure Databricks
 Handles data processing and transformation:
-- [Silver Layer Notebook]()
-- [Gold Layer Notebook]()
+
+  ![Silver Layer Processing](Screenshots/silver_layer.png)
+  ![Gold Layer Processing](Screenshots/gold_layer.png)
+
+- [Silver Layer Notebook](Azure_Databricks_Notebook/silver_notebook.ipynb)
+- [Gold Layer Notebook](Azure_Databricks_Notebook/gold_notebook.ipynb)
 
 ### Service Principal
 Ensures secure authentication between Databricks and ADLS.
 
 ### Power BI Integration
-Connects to Databricks for data visualization:
-![Power BI Connection]()
+Connects to Databricks for data visualization.
 
 ## Implementation Highlights
 - Dynamic data ingestion pipeline in ADF
