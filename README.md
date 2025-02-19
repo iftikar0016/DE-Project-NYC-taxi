@@ -1,7 +1,7 @@
 # NYC Taxi Data Engineering: Azure-Powered Medallion Architecture
 
 ## Project Synopsis
-This repository showcases an advanced data engineering solution leveraging Azure services to process and analyze NYC Taxi data. The project implements the Medallion Architecture, demonstrating a sophisticated approach to data refinement and analysis.
+This end-to-end Data Engineering project implements a Medallion Architecture (Bronze, Silver, Gold) data pipeline on Azure, leveraging the NYC Taxi dataset.  The solution uses Azure Data Factory for dynamic ingestion, Azure Databricks for data transformation and Delta Lake table creation, and Azure Data Lake Storage for persistent storage.
 
 ## Architectural Overview
 ![Architecture Diagram](Architecture%20Diagram.jpg)
